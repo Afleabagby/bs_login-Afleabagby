@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表單 (Forms)</title>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./js/all.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    body{
+      background:url('./bg.jpg') no-repeat center center/cover;;
+    }
+
+    h3{
+      margin:1rem 0;
+    }
+
+    .col{
+      background:rgba(255,255,255,0.5);
+      border-radius:1rem;
+      position:relative;
+    }
+
+    #icon1{
+      top:-10%;
+      position:absolute;
+      font-size:5rem;
+      color:rgba(143, 105, 22, 0.5);
+    }
+
+    .input-group-text{
+      background-color: white;
+      border-right:none;
+    }
+
+    .form-control{
+      border-left:none;
+    }
+
+
+  </style>
+</head>
+<body class="vh-100">
+  <div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="row h-100 w-50 d-flex justify-content-center align-items-center">
+      <div class="col h-50 w-50 d-flex flex-column justify-content-center align-items-center">
+        <i id="icon1" class="fas fa-user-circle"></i>
+        <form class="w-75">
+
+          <!-- 帳號 -->
+          <div class="form-group text-center">
+            <h3>Sign In</h3>
+            <div class="input-group ">
+              <label for="exampleInputEmail1"></label>
+              <div class="input-group-prepend ">
+                <span class="input-group-text" id="addon-wrapping"><i class="far fa-smile"></i></span>
+              </div>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+            </div>
+          </div>
+
+          <!-- 密碼 -->
+          <div class="form-group">
+            <div class="input-group">
+              <label for="exampleInputPassword1"></label>
+            <div class="input-group-prepend ">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+          </div>
+          
+          <!-- 登入紐 -->
+          <button type="submit" class="btn btn-primary text-center btn-block">Login</button>
+          
+          
+          <div class="footer d-flex flex-row  mt-3">
+            <div class="form-group form-check mt-3 flex-fill" id="checkBox">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-white text-nowrap small" for="exampleCheck1">Remember me </label>
+            </div>
+            <div class="text-right mt-3"><a class="text-nowrap text-white small" href="">Forget Password?</a></div>
+        </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script> 
+  <script src="./js/bootstrap.min.js"> </script>
+</body>
+</html>
